@@ -906,6 +906,11 @@ namespace Ink.Runtime
                 shouldAddToStream = false;
             }
 
+            var narrativeAction = currentContentObj as NarrativeAction;
+            if (narrativeAction) {
+                // UnityEngine.Debug.Log(narrativeAction);
+            }
+
             // Choice with condition?
             var choicePoint = currentContentObj as ChoicePoint;
             if (choicePoint) {

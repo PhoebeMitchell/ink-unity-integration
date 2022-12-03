@@ -336,11 +336,14 @@ namespace Ink.Runtime
             
             if (token is string) {
                 string str = (string)token;
-
                 // String value
                 char firstChar = str[0];
-                if (firstChar == '^')
+                if (firstChar == '^') {
+                    if (str[1] == '&') {
+                        return new Runtime.NarrativeAction(str.Substring(1));
+                    }
                     return new StringValue (str.Substring (1));
+                }
                 else if( firstChar == '\n' && str.Length == 1)
                     return new StringValue ("\n");
 
