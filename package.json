@@ -1,4 +1,6 @@
 {
   "name": "com.studiolovelies.ink",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "displayName": "Studio Lovelies Ink",
+  "description": "A modified version of Inkle's Ink used in Studio Lovelies games."
 }
